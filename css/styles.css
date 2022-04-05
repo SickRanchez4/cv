@@ -1,0 +1,14 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: 1rem;
+}
+
+.SideInfo{
+    text-align: center;
+    background-color: goldenrod;
+}
+
+.Main{
+    color: orange;
+}
