@@ -1,14 +1,145 @@
+/* Notes
+    font-family: 'Boogaloo', cursive;
+    font-family: 'Comfortaa', cursive;
+*/
+
+:root{
+    --primary-color: rgb(50, 60, 90);
+    --secundary-color: rgb(183, 158, 70);
+    --bg-color: rgb(200, 230, 255);
+}
 body{
-    display: grid;
-    grid-template-columns: 20% 70%;
-    grid-gap: 1rem;
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--bg-color);
 }
-
-.SideInfo{
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Boogaloo', cursive;
     text-align: center;
-    background-color: goldenrod;
+}
+h3 i{
+    margin-right: 10px;
+}
+ul li{
+    list-style: none;
+}
+ul li i{
+    display: block;
+}   
+.main{
+    display: grid;
+    grid-template-columns: 20% 40%;
+    justify-content: center;
+}
+.leftSide{
+    padding: 0;
+    color: white;
+    background-color: var(--primary-color);
+    box-shadow: -10px 0 20px 0 black;
+    text-align: center;
+}   
+.rightSide{
+    color: black;
+    box-shadow: 10px 0 20px 0 black;
+    background-color: white;
+    padding-bottom: 5rem;
+}
+.rightSide *{
+    margin-right: 5px;
+}
+.profilePicture{
+    margin-top: 2rem;
+    border-radius: 20px;
+    border: 3px solid var(--secundary-color);
+}
+.label{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--secundary-color);
+}
+/* .label:hover{
+    color: black;
+} */
+.contactInfo{
+    margin-top: 2rem;
+    text-align: left;
+}
+/* .contactInfo:hover{
+    color: var(--secundary-color);
+} */
+.contactInfo i{
+    margin-right: 10px;
+}
+.contactInfo li:hover{
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+.languages{
+    margin-top: 50px;
+    text-align: left;
+}
+/* .languages:hover{
+    color: var(--secundary-color);
+} */
+.languages li{
+    margin-top: 10px;
+}
+.languages li:hover{
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+.knowledge{
+    margin-top: 50px;
+    text-align: left;
+}
+/* .knowledge:hover{
+    color: var(--secundary-color);
+} */
+.knowledge li{
+    margin-top: 10px;
+}
+.knowledge li:hover{
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+.resume{
+    margin: 2rem;
+}
+.workExperience{
+    margin-top: 2rem;
+}
+.workExperience li{
+    padding-top: 15px;
+    justify-content: space-around;
+}
+.studies{
+    margin-top: 2rem;
+}
+.studies li{
+    padding-top: 15px;
+    justify-content: space-around;
 }
 
-.Main{
-    color: orange;
+/* Magic */
+.horizontalBar{
+    background-color: var(--secundary-color);
+    height: 1px;
+    margin: 10px;
+}
+.verticalBar{
+    background-color: var(--secundary-color);
+    height: inherit;
+    width: 1%;
+}
+.focused:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 45px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px){
+    .main{
+        grid-template-columns: 100%;
+    }
 }
