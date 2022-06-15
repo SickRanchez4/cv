@@ -8,116 +8,142 @@
     --secundary-color: rgb(183, 158, 70);
     --bg-color: rgb(200, 230, 255);
 }
+
 body{
     font-family: 'Comfortaa', cursive;
     background-color: var(--bg-color);
 }
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Boogaloo', cursive;
     text-align: center;
 }
+
 h3 i{
     margin-right: 10px;
 }
+
 ul li{
     list-style: none;
 }
-ul li i{
-    display: block;
-}   
+
+    ul li i{
+        display: block;
+    }
+
 .main{
     display: grid;
     grid-template-columns: 20% 40%;
     justify-content: center;
 }
+
 .leftSide{
     padding: 0;
     color: white;
     background-color: var(--primary-color);
     box-shadow: -10px 0 20px 0 black;
     text-align: center;
-}   
+}
+
 .rightSide{
     color: black;
     box-shadow: 10px 0 20px 0 black;
     background-color: white;
     padding-bottom: 5rem;
 }
-.rightSide *{
-    margin-right: 5px;
-}
+
+    .rightSide *{
+        margin-right: 5px;
+    }
+
 .profilePicture{
     margin-top: 2rem;
     border-radius: 20px;
     border: 3px solid var(--secundary-color);
 }
+
 .label{
     margin-top: 2rem;
     padding: 1rem;
     background-color: var(--secundary-color);
 }
-/* .label:hover{
-    color: black;
-} */
+
+    /* .label:hover{
+        color: black;
+    } */
+
 .contactInfo{
     margin-top: 2rem;
     text-align: left;
 }
-/* .contactInfo:hover{
-    color: var(--secundary-color);
-} */
-.contactInfo i{
-    margin-right: 10px;
-}
-.contactInfo li:hover{
-    color: var(--secundary-color);
-    cursor: pointer;
-}
+
+    /* .contactInfo:hover{
+        color: var(--secundary-color);
+    } */
+
+    .contactInfo i{
+        margin-right: 10px;
+    }
+    .contactInfo li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
 .languages{
     margin-top: 50px;
     text-align: left;
 }
-/* .languages:hover{
-    color: var(--secundary-color);
-} */
-.languages li{
-    margin-top: 10px;
-}
-.languages li:hover{
-    color: var(--secundary-color);
-    cursor: pointer;
-}
+
+    /* .languages:hover{
+        color: var(--secundary-color);
+    } */
+    .languages li{
+        margin-top: 10px;
+    }
+    .languages li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
 .knowledge{
     margin-top: 50px;
     text-align: left;
 }
-/* .knowledge:hover{
-    color: var(--secundary-color);
-} */
-.knowledge li{
-    margin-top: 10px;
-}
-.knowledge li:hover{
-    color: var(--secundary-color);
-    cursor: pointer;
-}
+
+    /* .knowledge:hover{
+        color: var(--secundary-color);
+    } */
+
+    .knowledge li{
+        margin-top: 10px;
+    }
+
+    .knowledge li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
 .resume{
     margin: 2rem;
 }
+
 .workExperience{
     margin-top: 2rem;
 }
-.workExperience li{
-    padding-top: 15px;
-    justify-content: space-around;
-}
+
+    .workExperience li{
+        padding-top: 15px;
+        justify-content: space-around;
+    }
+
 .studies{
     margin-top: 2rem;
 }
-.studies li{
-    padding-top: 15px;
-    justify-content: space-around;
-}
+
+    .studies li{
+        padding-top: 15px;
+        justify-content: space-around;
+    }
 
 /* Magic */
 .horizontalBar{
@@ -125,11 +151,13 @@ ul li i{
     height: 1px;
     margin: 10px;
 }
+
 .verticalBar{
     background-color: var(--secundary-color);
     height: inherit;
     width: 1%;
 }
+
 .focused:hover{
     background-color: var(--primary-color);
     color: white;
